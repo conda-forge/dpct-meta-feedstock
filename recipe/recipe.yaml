@@ -1,6 +1,6 @@
 context:
   version: "1.7.0"
-  build: 0
+  build: 1
 
 recipe:
   name: dpct-meta
@@ -48,7 +48,7 @@ outputs:
             - dpct
 
       - script:
-        - cmake-package-check dpct --targets dpct::dpct
+          - cmake-package-check dpct --targets dpct::dpct
         requirements:
           run:
             - cmake-package-check
