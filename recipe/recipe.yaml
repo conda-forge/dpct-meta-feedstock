@@ -33,6 +33,7 @@ outputs:
             - make
         - ${{ compiler("c") }}
         - ${{ compiler("cxx") }}
+        - ${{ stdlib("c") }}
       host:
         - jsoncpp
         - lemon
@@ -80,6 +81,7 @@ outputs:
             - make
         - ${{ compiler("c") }}
         - ${{ compiler("cxx") }}
+        - ${{ stdlib("c") }}
       host:
         - pybind11
         - lemon
